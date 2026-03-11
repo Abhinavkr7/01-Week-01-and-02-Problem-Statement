@@ -1,4 +1,4 @@
-```java
+
 import java.util.*;
 
 public class problem2 {
@@ -9,7 +9,8 @@ public class problem2 {
     // productId -> waiting list (FIFO)
     private Map<String, Queue<Integer>> waitingList;
 
-    public FlashSaleInventoryManager() {
+    // Constructor
+    public problem2() {
         stockMap = new HashMap<>();
         waitingList = new HashMap<>();
     }
@@ -60,10 +61,9 @@ public class problem2 {
         }
     }
 
-    // Main test
     public static void main(String[] args) {
 
-        FlashSaleInventoryManager manager = new FlashSaleInventoryManager();
+        problem2 manager = new problem2();
 
         manager.addProduct("IPHONE15_256GB", 5);
 
@@ -83,4 +83,4 @@ public class problem2 {
         manager.showWaitingList("IPHONE15_256GB");
     }
 }
-```
+

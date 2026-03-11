@@ -1,4 +1,4 @@
-```java
+
 import java.util.*;
 
 public class problem1 {
@@ -9,7 +9,7 @@ public class problem1 {
     // username -> number of attempts
     private Map<String, Integer> attemptFrequency;
 
-    public UsernameChecker() {
+    public problem1() {
         usernameMap = new HashMap<>();
         attemptFrequency = new HashMap<>();
     }
@@ -79,7 +79,7 @@ public class problem1 {
     // Main method for testing
     public static void main(String[] args) {
 
-        UsernameChecker checker = new UsernameChecker();
+        problem1 checker = new problem1();
 
         // Register some users
         checker.registerUser("john_doe", 101);
@@ -107,4 +107,4 @@ public class problem1 {
                 + checker.getMostAttempted());
     }
 }
-```
+
